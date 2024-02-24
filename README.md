@@ -1,14 +1,5 @@
-## Distributed Systems
-
-Martim Pereira fc58223  
-João Pereira fc58189  
-Daniel Nunes fc58257  
-
-Group 04  
-
-## Description
-
-The general aim of the project will be to realise a client-server service with a key-value pair storage system.
+# Description
+The general aim of the project will be to realize a client-server service with a key-value pair storage system.
 It has an interface for the user, allowing him to request the execution of operations on a hash table, and on the other hand the server is programmed to wait for a connection request from the client, thus being ready to receive, execute and respond to the operations sent. This phase introduces the possibility of having several clients connected to one server.
 
 This phase specifically introduced support for fault tolerance through replication of the server's state, following the Chain Replication model, using the Apache Zookeeper coordination service.
@@ -19,7 +10,7 @@ This phase specifically introduced support for fault tolerance through replicati
 - Creation of modules (table_client and table_server), in which the client allows commands to be sent via the network to invoke operations implemented by the server and the server receives the commands received, executes them on the table and returns the response to the client.
 - Creation of a module (client_stub), which allows messages and operations sent by the server to be adapted for the client side.
 - Creation of a module (table_skel), which allows a client message to be transformed into one or more calls.
-- Creation of a module (synchronisation-private), which makes it possible to deal with synchronisation problems between threads.
+- Creation of a module (synchronization-private), which makes it possible to deal with synchronization problems between threads.
 - Creation of the modules (stats, stats-private), which deal with operations related to the stats_t structure (structure that stores relevant information about the execution).
 - Updating the (utils-private) module, adding a function that deals with time differences.
 - Modification of the sdmessage.proto file to include a new message type.
