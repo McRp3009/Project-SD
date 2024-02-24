@@ -1,12 +1,12 @@
 # Description
 The general aim of the project will be to realize a client-server service with a key-value pair storage system.
-It has an interface for the user, allowing him to request the execution of operations on a hash table, and on the other hand the server is programmed to wait for a connection request from the client, thus being ready to receive, execute and respond to the operations sent. This project was developed in four fases and this is the 4th fase (complete project)
+It has an interface for the user, allowing him to request the execution of operations on a hash table, and on the other hand, the server is programmed to wait for a connection request from the client, thus being ready to receive, execute, and respond to the operations sent. This project was developed in four phases and this is the 4th phase (complete project)
 
 ## Execution
 
 Inside the group04 folder, run the following commands to get the job done:  
 
-1. make clean -> cleans the .o, executable and .d files  
+1. make clean -> cleans the .o, executable, and .d files  
 2. make all - > create the .o and executable files for the client and server \
 3. Switch on zookeeper:\
     - Switch on the zookeeper server using the zkServer.sh start command
@@ -20,7 +20,7 @@ __Note__:
 2. There are other compilation rules:
     - Make table_server: Compiles and makes the executable for the server
     - Make table_client: Compile and make the executable for the client
-    - Make libtable: Compile and make the library .a file containing the data.o entry.o table.o list.o files.
+    - Make libtable: Compile and make the library . a file containing the data.o entry.o table.o list.o files.
 3. Allows multiple clients to be connected to a server.
 
 ## Note
@@ -28,3 +28,8 @@ __Note__:
 This work was carried out and tested using the WSL: Ubuntu system in Visual Studio Code.
 
 The final grade was 20 out of 20.
+
+## Contributors:
+João Pereira fc58189
+Daniel Nunes fc58257
+Martim Pereira fc58223
